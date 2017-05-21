@@ -12,15 +12,15 @@ use ieee.numeric_std.all;
 use work.top_pkg.all;
 
 
-entity top is
+entity square_wav is
    Port ( 
       clk       : in STD_LOGIC;
       reset     : in STD_LOGIC;
       data_out  : out STD_LOGIC
    );
-end top;
+end square_wav;
 
-architecture Behavioral of top is
+architecture Behavioral of square_wav is
    -- Used for frequency generation
    constant FREQ1    : natural := 242720;            -- in Hz
    constant FREQ2    : natural := 23600;             
